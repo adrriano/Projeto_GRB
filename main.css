@@ -1,40 +1,410 @@
+body{
+  
+}
 
+.led1{
+    background-color: rgb(121, 4, 4);
+    height: 10px;
+}
+.led1{
+    margin-top: 5px;
+    border-radius: 10px;
+    box-shadow:0px 8px 10px rgba(0,0,0,0.3);
+}
+.led1{/* sempre fazer a animação separada dos outros componentes , utilize o id*/
+    /* Codigo para chamar a animação rodaroda*/
+    -webkit-animation-name: rodaroda; /* chamando a animação rodaroda*/
+    -webkit-animation-duration: 4.150s;/* Define o tempo que uma animação demora para concluir um ciclo.*/
+    -webkit-animation-timing-function: linear;/*Define o tempo que uma animação demora para concluir um ciclo.*/
+    -webkit-animation-iteration-count: infinite;/*Define o número de vezes que um ciclo de animação é reproduzido. O valor padrão é um, o que significa que a animação será reproduzida do começo ao fim uma vez.*/
+    -webkit-animation-direction: linear; /* define a direção que ira rodar*/   
+}
+.led2{
+    background-color: #6d1d1d;
+}
+.led2{ 
+    float: initial;
+    position: relative;
+    height: 10px;
+    border: solid 260px transparent;
+    border-bottom: solid 450px rgb(20, 20, 20);
+    border-right: 0px;
+    border: solid 450px transparent;
+    border-top: none; 
+}
+.led2{
+    margin-top: -95px; /*distancia da margem superior*/
+    /*box-shadow:0px -10px 10px rgba(0,0,0,0.3);/*Sombreamaento*/   
+}
+.base1{/*essa linha de comando configura o triangulo esquerdo do painel de slide*/
+    float: initial;
+    position: relative;
+    height: 10px;
+    border: solid 207px transparent;
+    border-bottom: solid 368px rgb(0, 0, 0);
+    transform: rotate(180deg);
+    border-right:0px;         
+    border-top: none; 
+    top: -380px;
+    left:10px 
+}
+.base1{
+    float: initial;
+    position: relative;
+    width: 1px; 
+}
+.base2{
+    float: inherit;
+    position: relative;
+    width: 223px;
+    height: 45px;
+    z-index:1 ; /*essa vai ficar por baixo*/
+    border: solid 40px transparent;
+    border-bottom: solid 70px rgb(255, 255, 255);
+    border-right: solid 0px ;
+    border-top: none;
+    top: -838px;   
+}
+.base2{
+    transform: rotate(180deg)
+}
+.led2{/* sempre fazer a animação separada dos outros componentes , utilize o id*/
+     /*Codigo para chamar a animação rodaroda*/
+    -webkit-animation-name: rodaroda; /* chamando a animação rodaroda*/
+    -webkit-animation-duration: 4.150s;/* Define o tempo que uma animação demora para concluir um ciclo.*/
+    -webkit-animation-timing-function: linear;/*Define o tempo que uma animação demora para concluir um ciclo.*/
+    -webkit-animation-iteration-count: infinite;/*Define o número de vezes que um ciclo de animação é reproduzido. O valor padrão é um, o que significa que a animação será reproduzida do começo ao fim uma vez.*/
+    -webkit-animation-direction: linear; /* define a direção que ira rodar*/   
+}
+#menu ul li{/*configura��o do menu, preparando pra o submenu*/
+    color:rgb(0, 0, 0);
+    float: left;
+    position: relative;			/* deixa o menu alinahdo*/
+    width: 180px;			/* instancia um menu do outro*/
+    height: 40px;			/*largura do backgroud*/
+    display: inline-block;		/* tira a marca��o de lista do menu*/
+    text-align: center;			/*alinha no centro da pagina*/
+    line-height: 40px;			/* Alinhando verticalmente*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;	/* fonte do menu*/
+    font-size: 18px;            /*tamnho da fonte*/
+    z-index:2; /*essa vai ficar por cima*/
+
+}
+
+#menu:hover ul:hover li:hover{/* efeito ao passar mouse*/
+    background-color: rgb(124, 0, 0);
+    color: rgb(236, 236, 236);
+}  
+
+#menu ul{/*deixa o sub_menu alinhado com menu principal*/
+    padding: 0px;
+}
+
+#menu ul ul{/*escondendo sub_menu*/
+    display: none;
+}
+
+#menu ul li:hover > ul{/* aparecendo sub_meu ao passar o mouse (OBS)"para que isso aconte�a temos que saber eran�a"*/
+    display: block;
+}
+
+#menu ul li:hover>ul li {
+    background-color: rgb(0,0,0);
+    /*background-color: rgba(0,0,0,10);
+    opacity:0.5;*/
+}
+
+#menu ul li> ul li:hover{/* trabanlhado com efeito e com eran�a*/
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+#menu ul li > ul #li2:hover{/*trabalhando com erança mexendo no tamano do sud_menu da teg li da class="li2"*/
+    width: 250px;
+}
+#menu ul li > ul #li2{/* cor da fonte do sub_menu*/
+    color: white;
+}
+#menu ul li > ul #li3:hover{/*trabalhando com erança mexendo no tamano do sud_menu da teg li da class="li3"*/
+    width: 223px;
+
+}
+
+#menu ul li > ul #li3{
+    color: white;
+}
+#menu ul li > ul #li4{
+    color: white;
+}
+#menu ul li > ul #li5{
+    color: white;
+}
+#menu ul li > ul #li6{
+    color: white;
+}
+#menu ul li > ul #li7{
+    color: white;
+}
+#menu ul li > ul #li8{
+    color: white;
+}
+#menu ul li > ul #li9{
+    color: white;
+}
+#menu ul li > ul #li10:hover{/*trabalhando com erança mexendo no tamano do sud_menu da teg li da class="li3"*/
+    width: 210px;
+}
+#menu ul li > ul #li10{
+    color: white;
+}
+#menu ul li > ul #li11{
+    color: white;
+}
+#menu{
+    float: left;
+    position: relative;
+    left: 180px;/* define a possi�ao que o menu ira ficar ( mais a direita ou mais a esquerda)*/
+    top: -160px;
+}
+#menu ul > #H:hover{/* Efeito do menu "fazer o menu ir a frente"*/
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}        
+ #menu #ul> #E:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+ #menu #ul> #S:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+} 
+ #menu #ul> #AR:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/*#menu ul li:hover>ul li {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,70);
+    opacity:0.5;
+}*/
 h1{
-font-size: 75px;
-text-decoration: underline black;
-font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 9px 0px 5px rgb(100, 100, 100);
 }
 h1{
-  background-image: url()
+    font-size: 75px;    
+    z-index:2; /*essa vai ficar por cima*/
+    text-decoration: underline black;
+    font-family: Arial, Helvetica, sans-serif;  
 }
+h1{
+    position: relative; /*essa conbinação faz com que o elemento div sobreponha o outro elemento div*/
+    z-index:2; /*essa vai ficar por cima*/
+    top: -25px; 
+    left: 1px;
+}
+#quad2:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); 
+}
+
 h5{
-  margin-top: -55px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 45px;
+    float: left;
+    position: relative;
+    top: -100px;
+    left: 45px;
+    z-index:2; /*essa vai ficar por cima*/
+    font-family: Arial, Helvetica, sans-serif;
 }
 #quad1{
-  width: 20px;
-  height: 15px;
-  border: 3px solid;
-}
-#quad2{
-  width: 18px;
-  height: 15px;
-
-}
-#quad2{
-  float: left;
-  position: relative;
-  left: 199px;
-  margin-top: -2px;
-
+    width: 20px;
+    height: 15px;
+    border: 3px solid;
+    box-shadow: 9px 0px 5px rgb(100, 100, 100); 
 }
 #quad1{
-  float: left;
-  position: relative;
-  left: 208px;
-  margin-top: 5px;
+    float: left;
+    position: relative;
+    z-index: 2;
+    top: 5px;
+    left: 207px;
 }
 #quad2{
-  background-color: #800000;
+    width: 18px;
+    height: 15px;  
 }
+#quad2{
+    float: left;
+    position: relative;
+    z-index: 2;
+    top: -2px;
+    left: 196px;
+}
+#quad2{
+    background-color: #800000;
+}
+#btn_left{/*Config dos botoes de trota de imagem*/
+    float: left;
+    position: relative;
+    top: 0px;
+    z-index: 2;
+}
+#btn_left{
+    width: 60px;
+    height: 60px;
+    background-color: #800000;
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+    border:1px solid;
+    box-shadow: 0px 0px 15px rgb(255, 255, 255);
+}
+#btn_left:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); 
+}
+.move_botao1{
+    float: initial;
+    position: absolute;
+    top: 300px;
+    left: 25px;
+}
+#btn_rigth{
+    float: right;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+#btn_rigth{
+    width: 60px;
+    height: 60px;
+    background-color: #800000;
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+    border:1px solid;
+    box-shadow: 0px 0px 15px rgb(255, 255, 255);
+}
+.move_botao2{
+    float: initial;
+    position: absolute;
+    top: 300px;
+    left: 1265px;
+}
+
+#imgSL{
+    width: 127.5%;
+    height:440.4px;
+    top:0px;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 19% 0%); /* esse comando recorta a imagem para que ela fique do formato desejado*/
+}
+#imgSL2{
+    width: 128%;
+    height:440.4px;
+    top:0px;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 19% 0%); /* esse comando recorta a imagem para que ela fique do formato desejado*/
+
+}
+#imgSL3{
+    width: 128%;
+    height:440.4px;
+    top:0px;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 19% 0%);
+}
+.mover_img1{
+    float: initial;
+    position: absolute;
+    top: 400px;
+    left: -249.8px ;
+    
+}
+.mover_img2{
+    float: initial;
+    position: absolute;
+    top: 400px;
+    left: -249.8px;
+    
+}
+.mover_img3{
+    float: initial;
+    position: absolute;
+    top: 400px;
+    left: -249.9px ;
+}
+.mover_img1{
+  width: 96.6%;
+  height: 439px;
+}
+.mover_img3{
+    width: 96.6%;
+    height: 439px;
+  }
+#btn_rigth:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); 
+}
+.fundo_capa{
+    width: 79.1%;
+    height: 400px;
+    background-color: transparent;
+    
+}
+.fundo_capa{
+    float: inherit;
+    position: relative;
+    border: solid 250px transparent;
+    border-bottom: solid 440px rgb(255, 255, 255);
+    border-right: solid 0px ;
+    border-top: none;
+    top: -1343px;
+    left: 18px;
+    z-index: 1;
+}
+.mover_btSL{
+    float: initial;
+    position: absolute;
+    left: 600px;
+
+}
+.botaoSL1,.botaoSL2,.botaoSL3{
+    float: left;
+    position: relative; 
+    width: 15px;
+    height: 15px;
+    top: -1380px;
+    border-radius: 2px;
+    background-color: #800000;
+    z-index: 2;
+}
+.botaoSL1{
+    float: left;
+    position: relative;
+    left: 50px
+}
+.botaoSL2{
+    float: left;
+    position: relative;
+    left: 100px
+}
+.botaoSL3{
+    float: left;
+    position: relative;
+    left: 150px
+}
+.botaoSL1:hover,.botaoSL2:hover,.botaoSL3:hover{
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5); 
+}
+.botaoSL1:hover,.botaoSL2:hover,.botaoSL3:hover{
+    -webkit-animation-name: roda; /* chamando a animação rodaroda*/
+    -webkit-animation-duration: 2.150s;/* Define o tempo que uma animação demora para concluir um ciclo.*/
+    -webkit-animation-timing-function: initial;/*Define o tempo que uma animação demora para concluir um ciclo.*/
+    -webkit-animation-iteration-count: infinite;/*Define o número de vezes que um ciclo de animação é reproduzido. O valor padrão é um, o que significa que a animação será reproduzida do começo ao fim uma vez.*/
+    -webkit-animation-direction: linear; /* define a direção que ira rodar*/  
+}
+    
