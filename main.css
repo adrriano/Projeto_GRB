@@ -1,0 +1,40 @@
+
+h1{
+font-size: 75px;
+text-decoration: underline black;
+font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+  background-image: url()
+}
+h5{
+  margin-top: -55px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 45px;
+}
+#quad1{
+  width: 20px;
+  height: 15px;
+  border: 3px solid;
+}
+#quad2{
+  width: 18px;
+  height: 15px;
+
+}
+#quad2{
+  float: left;
+  position: relative;
+  left: 199px;
+  margin-top: -2px;
+
+}
+#quad1{
+  float: left;
+  position: relative;
+  left: 208px;
+  margin-top: 5px;
+}
+#quad2{
+  background-color: #800000;
+}
